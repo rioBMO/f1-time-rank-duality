@@ -255,12 +255,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{f1_time_rank_duality_2024,
-  title={Faster identification of faster Formula 1 drivers via time-rank duality},
-  author={[Original Authors]},
-  journal={[Journal Name]},
-  year={2024},
-  note={Python implementation available at: https://github.com/your-username/f1-time-rank-duality}
+@article{2024-Fry-Bri-Fan,
+  author = {Fry, John and Brighton, Tom and Fanzon, Silvio},
+  title = {Faster identification of faster Formula 1 drivers via 
+           time-rank duality},
+  journal = {Economics Letters},
+  volume = {237},
+  pages = {111671},
+  year = {2024},
+  doi = {10.1016/j.econlet.2024.111671}
 }
 ```
 
@@ -268,9 +271,9 @@ If you use this code in your research, please cite:
 
 For questions or collaboration opportunities:
 
-- **GitHub Issues**: [Create an issue](https://github.com/your-username/f1-time-rank-duality/issues)
-- **Email**: your.email@domain.com
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
+<!-- - **GitHub Issues**: [Create an issue](https://github.com/your-username/f1-time-rank-duality/issues) -->
+- **Email**: harioobmo@gmail.com
+<!-- - **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile) -->
 
 ## 🔗 Related Work
 
