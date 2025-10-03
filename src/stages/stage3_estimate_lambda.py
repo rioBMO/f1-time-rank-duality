@@ -6,6 +6,12 @@ Input: output/stage2_probabilities.csv
 Output: output/stage3_lambda.csv
 """
 import numpy as np
+import sys
+import os
+
+# Add src to path for imports
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+
 import pandas as pd
 from scipy.optimize import minimize
 from config import STAGE2_OUT, STAGE3_OUT

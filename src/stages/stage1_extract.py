@@ -4,6 +4,12 @@ Input expected: data/odds_table1.csv
 Output: output/stage1_odds_parsed.csv
 """
 import pandas as pd
+import sys
+import os
+
+# Add parent directory to path for imports
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from config import STAGE1_IN, STAGE1_OUT
 from utils import fractional_to_rawprob, save_df
 

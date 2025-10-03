@@ -7,6 +7,12 @@ Input: output/stage2_probabilities.csv or stage3 output (we use p_norm)
 Output: output/stage4_mu_sigma.csv
 """
 import numpy as np
+import sys
+import os
+
+# Add src to path for imports
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+
 import pandas as pd
 from scipy.stats import norm
 from config import STAGE2_OUT, STAGE4_OUT

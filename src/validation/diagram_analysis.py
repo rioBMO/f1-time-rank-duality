@@ -8,6 +8,12 @@ untuk memvalidasi model distribusi exponential dalam penelitian F1.
 
 import matplotlib.pyplot as plt
 import numpy as np
+import sys
+import os
+
+# Add src to path for imports
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+
 import pandas as pd
 from scipy import stats
 

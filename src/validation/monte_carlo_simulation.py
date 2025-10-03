@@ -13,13 +13,19 @@ Model Teoritis:
 """
 
 import numpy as np
+import sys
+import os
+
+# Add src to path for imports
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy import stats
 from scipy.special import gamma, digamma, polygamma
-from stage2_probabilities import run_stage2
-from stage3_estimate_lambda import run_stage3
-from stage4_mu_sigma import run_stage4
+from stages.stage2_probabilities import run_stage2
+from stages.stage3_estimate_lambda import run_stage3
+from stages.stage4_mu_sigma import run_stage4
 import warnings
 warnings.filterwarnings('ignore')
 

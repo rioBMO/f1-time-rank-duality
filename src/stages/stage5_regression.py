@@ -7,6 +7,12 @@ Input: data/f1seconddata.txt
 Output: output/stage5_regression.csv
 """
 import numpy as np
+import sys
+import os
+
+# Add src to path for imports
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+
 import pandas as pd
 import statsmodels.api as sm
 from config import STAGE5_IN, STAGE5_OUT

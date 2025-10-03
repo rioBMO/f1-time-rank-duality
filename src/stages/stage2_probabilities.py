@@ -4,6 +4,12 @@ Input: output/stage1_odds_parsed.csv
 Output: output/stage2_probabilities.csv
 """
 import pandas as pd
+import sys
+import os
+
+# Add src to path for imports
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+
 from config import STAGE1_OUT, STAGE2_OUT
 from utils import save_df
 

@@ -4,11 +4,17 @@ Usage: python main.py         # runs full pipeline
        python main.py --stages 1 2   # run selected stages
 """
 import argparse
-from stage1_extract import run_stage1
-from stage2_probabilities import run_stage2
-from stage3_estimate_lambda import run_stage3
-from stage4_mu_sigma import run_stage4
-from stage5_regression import run_stage5
+import sys
+import os
+
+# Add src to path for imports
+sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+
+from stages.stage1_extract import run_stage1
+from stages.stage2_probabilities import run_stage2
+from stages.stage3_estimate_lambda import run_stage3
+from stages.stage4_mu_sigma import run_stage4
+from stages.stage5_regression import run_stage5
 
 
 def main(run_stages=None):

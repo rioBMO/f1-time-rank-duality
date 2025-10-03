@@ -83,19 +83,19 @@ Run specific analysis stages:
 
 ```bash
 # Stage 1: Parse odds data
-python stage1_extract.py
+python -m src.stages.stage1_extract
 
 # Stage 2: Normalize probabilities
-python stage2_probabilities.py
+python -m src.stages.stage2_probabilities
 
 # Stage 3: Estimate lambda parameters
-python stage3_estimate_lambda.py
+python -m src.stages.stage3_estimate_lambda
 
 # Stage 4: Calculate mu and sigma
-python stage4_mu_sigma.py
+python -m src.stages.stage4_mu_sigma
 
 # Stage 5: Regression analysis
-python stage5_regression.py
+python -m src.stages.stage5_regression
 ```
 
 ### Monte Carlo Validation
@@ -103,7 +103,7 @@ python stage5_regression.py
 Validate the model with empirical simulations:
 
 ```bash
-python monte_carlo_simulation.py
+python -m src.validation.monte_carlo_simulation
 ```
 
 ### Statistical Analysis
@@ -111,9 +111,9 @@ python monte_carlo_simulation.py
 Analyze significance and create detailed explanations:
 
 ```bash
-python significance_analysis.py
-python statistical_explanation.py
-python diagram_analysis.py
+python -m src.validation.significance_analysis
+python -m src.validation.statistical_explanation
+python -m src.validation.diagram_analysis
 ```
 
 ## 📁 Project Structure
@@ -124,40 +124,53 @@ f1-time-rank-duality/
 ├── requirements.txt             # Python dependencies
 ├── LICENSE                      # MIT License
 ├── main.py                      # Main pipeline orchestrator
-├── config.py                    # Configuration settings
-├── utils.py                     # Utility functions
+├── fix_imports.py              # Import fixing utility
 │
-├── stages/                      # Analysis pipeline stages
-│   ├── stage1_extract.py        # Odds data parsing
-│   ├── stage2_probabilities.py  # Probability normalization
-│   ├── stage3_estimate_lambda.py # Lambda parameter estimation
-│   ├── stage4_mu_sigma.py       # Distribution parameters
-│   └── stage5_regression.py     # Statistical regression
+├── src/                         # Source code
+│   ├── __init__.py             # Package initialization
+│   ├── config.py               # Configuration settings
+│   ├── utils.py                # Utility functions
+│   │
+│   ├── stages/                 # Analysis pipeline stages
+│   │   ├── __init__.py         # Stages package init
+│   │   ├── stage1_extract.py   # Odds data parsing
+│   │   ├── stage2_probabilities.py # Probability normalization
+│   │   ├── stage3_estimate_lambda.py # Lambda parameter estimation
+│   │   ├── stage4_mu_sigma.py  # Distribution parameters
+│   │   └── stage5_regression.py # Statistical regression
+│   │
+│   └── validation/             # Model validation
+│       ├── __init__.py         # Validation package init
+│       ├── monte_carlo_simulation.py # Empirical validation
+│       ├── significance_analysis.py # Statistical significance
+│       ├── statistical_explanation.py # Detailed explanations
+│       └── diagram_analysis.py # Plot interpretations
 │
-├── validation/                  # Model validation
-│   ├── monte_carlo_simulation.py # Empirical validation
-│   ├── significance_analysis.py  # Statistical significance
-│   ├── statistical_explanation.py # Detailed explanations
-│   └── diagram_analysis.py      # Plot interpretations
+├── data/                       # Input data
+│   ├── odds_table1.csv         # Bookmaker odds
+│   └── f1seconddata.txt        # Driver position data
 │
-├── data/                        # Input data
-│   ├── odds_table1.csv          # Bookmaker odds
-│   └── f1seconddata.txt         # Driver position data
-│
-├── output/                      # Generated results
-│   ├── stage1_odds_parsed.csv   # Parsed odds
+├── output/                     # Generated results
+│   ├── stage1_odds_parsed.csv  # Parsed odds
 │   ├── stage2_probabilities.csv # Normalized probabilities
-│   ├── stage3_lambda.csv        # Lambda estimates
-│   ├── stage4_mu_sigma.csv      # Distribution parameters
-│   ├── stage5_regression.csv    # Regression results
+│   ├── stage3_lambda.csv       # Lambda estimates
+│   ├── stage4_mu_sigma.csv     # Distribution parameters
+│   ├── stage5_regression.csv   # Regression results
 │   ├── monte_carlo_validation.png # Validation plots
-│   └── monte_carlo_report.txt   # Validation report
+│   └── monte_carlo_report.txt  # Validation report
 │
-├── journal/                     # Research documentation
+├── docs/                       # Documentation
+│   └── GITHUB_UPLOAD_GUIDE.md  # GitHub setup guide
+│
+├── scripts/                    # Utility scripts
+│   ├── setup_github.py         # GitHub setup automation
+│   └── setup_github.sh         # Bash setup script
+│
+├── journal/                    # Research documentation
 │   └── 1-s2.0-S016517652400154X-main.pdf # Original paper
 │
-└── logs/                        # Execution logs
-    └── analysis_*.log           # Timestamped logs
+└── logs/                       # Execution logs
+    └── analysis_*.log          # Timestamped logs
 ```
 
 ## 🔬 Methodology

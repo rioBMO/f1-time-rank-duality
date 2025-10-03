@@ -1,7 +1,7 @@
 from pathlib import Path
 
-# Project root (assumes this file is in project root)
-ROOT = Path(__file__).parent.resolve()
+# Project root (parent of src folder)
+ROOT = Path(__file__).parent.parent.resolve()
 DATA_DIR = ROOT / 'data'
 OUTPUT_DIR = ROOT / 'output'
 LOGS_DIR = ROOT / 'logs'

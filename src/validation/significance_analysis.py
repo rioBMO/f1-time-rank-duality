@@ -1,7 +1,13 @@
 import pandas as pd
+import sys
+import os
+
+# Add src to path for imports
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+
 import numpy as np
 import statsmodels.api as sm
-from stage5_regression import read_positions_matrix
+from stages.stage5_regression import read_positions_matrix
 
 def analyze_statistical_significance():
     """
