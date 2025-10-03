@@ -8,10 +8,10 @@ Drivers: 20
 Races: 25
 
 VALIDATION METRICS:
-- Correlation: 0.999998
-- R-squared: 0.999996
-- Mean Absolute Error: 0.00020303
-- Root Mean Square Error: 0.00031466
+- Correlation: 0.999999
+- R-squared: 0.999998
+- Mean Absolute Error: 0.00018689
+- Root Mean Square Error: 0.00024670
 
 CONCLUSION:
 VALID: Model confirmed by Monte Carlo simulation
