@@ -1,10 +1,8 @@
 # Formula 1 Driver Performance Analysis: Time-Rank Duality Model
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![Licens├── journal/                     # Research documentation
-│   └── README.md               # Legal paper references
-│https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Research](https://img.shields.io/badge/Research-Formula%201-red.svg)](https://github.com/your-username/f1-time-rank-duality)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Research](https://img.shields.io/badge/Research-Formula%201-red.svg)](https://github.com/rioBMO/f1-time-rank-duality)
 
 A comprehensive Python implementation of the exponential distribution model for Formula 1 driver performance analysis, based on the research paper "Faster identification of faster Formula 1 drivers via time-rank duality."
 
@@ -55,7 +53,7 @@ This project implements a statistical model for analyzing Formula 1 driver perfo
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/f1-time-rank-duality.git
+git clone https://github.com/rioBMO/f1-time-rank-duality.git
 cd f1-time-rank-duality
 ```
 
@@ -273,9 +271,8 @@ If you use this code in your research, please cite:
 
 For questions or collaboration opportunities:
 
-<!-- - **GitHub Issues**: [Create an issue](https://github.com/your-username/f1-time-rank-duality/issues) -->
+- **GitHub Issues**: [Create an issue](https://github.com/rioBMO/f1-time-rank-duality/issues)
 - **Email**: harioobmo@gmail.com
-<!-- - **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile) -->
 
 ## 🔗 Related Work
 
