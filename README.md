@@ -252,6 +252,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📚 Citation
 
+This project is based on the methodology from the following paper. We kindly ask that you cite the original research if you use this code or its concepts.
+
+*Fry, J., Brighton, T., & Fanzon, S. (2024). Faster identification of faster Formula 1 drivers via time-rank duality. Economics Letters, 237, 111671.*
+
+The original R code from the authors, which was used as a reference, is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+
 If you use this code in your research, please cite:
 
 ```bibtex
