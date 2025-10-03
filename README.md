@@ -1,7 +1,9 @@
 # Formula 1 Driver Performance Analysis: Time-Rank Duality Model
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Licens├── journal/                     # Research documentation
+│   └── README.md               # Legal paper references
+│https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Research](https://img.shields.io/badge/Research-Formula%201-red.svg)](https://github.com/your-username/f1-time-rank-duality)
 
 A comprehensive Python implementation of the exponential distribution model for Formula 1 driver performance analysis, based on the research paper "Faster identification of faster Formula 1 drivers via time-rank duality."
@@ -277,7 +279,8 @@ For questions or collaboration opportunities:
 
 ## 🔗 Related Work
 
-- [Original Research Paper](journal/1-s2.0-S016517652400154X-main.pdf)
+- [Original Research Paper (DOI)](https://doi.org/10.1016/j.econlet.2024.111671)
+- [Economics Letters Journal](https://www.sciencedirect.com/journal/economics-letters)
 - [Formula 1 Official Website](https://www.formula1.com/)
 - [Statistical Analysis Documentation](https://docs.scipy.org/doc/scipy/reference/stats.html)
 

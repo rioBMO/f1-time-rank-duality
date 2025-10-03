@@ -89,6 +89,11 @@ output/temp_*
 # data/*.txt
 # data/*.xlsx
 
+# Academic papers and copyrighted content
+journal/*.pdf
+docs/*.pdf
+*.pdf
+
 # Sensitive information
 config_local.py
 secrets.py
